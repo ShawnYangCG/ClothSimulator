@@ -1,0 +1,11 @@
+QT += core gui widgets
+CONFIG += c++11 release
+CONFIG -= debug debug_and_release
+TEMPLATE = app
+TARGET = ClothSimulator_version_1
+INCLUDEPATH += .
+SOURCES += $$files(*.cpp) $$files(renderWindow/*.cpp)
+HEADERS += $$files(*.h) $$files(renderWindow/*.h)
+FORMS += ClothSimulator_version_1.ui
+RESOURCES += ClothSimulator_version_1.qrc
+LIBS += -lopengl32 -lglu32

@@ -1,0 +1,4 @@
+* text=auto
+*.gif binary
+*.obj text
+*.cmd text eol=crlf

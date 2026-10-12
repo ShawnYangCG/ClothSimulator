@@ -1,0 +1,30 @@
+# Build output and local SDKs
+/build/
+/dist/
+/Debug/
+/Release/
+/Release_Portable*/
+/qt/
+/downloads/
+/output/
+
+# IDE and compiler intermediates
+.vs/
+*.user
+*.suo
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.obj
+!testObj/**/*.obj
+!testObj/*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.log
+.qmake.stash
+Makefile*
+startup-check.*
+import-check.*

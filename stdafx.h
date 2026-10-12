@@ -1,0 +1,21 @@
+#pragma once
+#include <QTreeWidgetItem>
+#include <QOpenGLWidget>
+#include <QtWidgets/QMainWindow>
+#include <QApplication>
+#include <QObject>
+#include <QTimer>
+#include <QElapsedTimer>
+#include <QMessageBox>
+#include <QFileDialog>
+#include <QMouseEvent>
+#include <QStandardItemModel>
+#include <qmath.h>
+#include <iostream>
+#include <vector>
+#include <map>
+#include <math.h>
+#include <fstream>
+#include <string>
+#include <QTextCodec>
+
