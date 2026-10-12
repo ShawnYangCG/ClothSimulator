@@ -33,7 +33,7 @@ if errorlevel 1 exit /b 1
 set "CRT="
 for /d %%i in ("%VCToolsRedistDir%x86\Microsoft.VC*.CRT") do set "CRT=%%i"
 if not defined CRT (
-  echo Cannot find x86 Visual C++ runtime files under %VCToolsRedistDir%.
+  echo Cannot find x86 Visual C++ runtime files.
   exit /b 1
 )
 copy /y "%CRT%\*.dll" "dist\" >nul
@@ -43,3 +43,4 @@ if errorlevel 1 exit /b 1
 if not exist dist\output mkdir dist\output
 echo Ready: %CD%\dist\ClothSimulator_version_1.exe
 endlocal
+
