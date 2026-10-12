@@ -1,0 +1,14 @@
+QT += core gui widgets
+CONFIG += c++11 release console
+CONFIG -= debug debug_and_release app_bundle
+TEMPLATE = app
+TARGET = rotation_control_test
+PROJECT_ROOT = $$clean_path($$PWD/..)
+INCLUDEPATH += $$PROJECT_ROOT
+SOURCES += $$files($$PROJECT_ROOT/*.cpp) $$files($$PROJECT_ROOT/renderWindow/*.cpp)
+SOURCES -= $$PROJECT_ROOT/main.cpp
+SOURCES += $$PWD/rotation_control.cpp
+HEADERS += $$files($$PROJECT_ROOT/*.h) $$files($$PROJECT_ROOT/renderWindow/*.h)
+FORMS += $$PROJECT_ROOT/ClothSimulator_version_1.ui
+RESOURCES += $$PROJECT_ROOT/ClothSimulator_version_1.qrc
+LIBS += -lopengl32 -lglu32

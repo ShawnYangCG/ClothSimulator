@@ -65,7 +65,7 @@ void SimulationObject::computeWithField(FieldOfForce field) {
 				if (this->Environment->this_ui->ballON && 
 					(this->vertices[i].coords - Cartesian3(0,0.5,0)).length() <= 0.207) {
 					this->vertices[i].setCollisionVelocity((this->vertices[i].coords - Cartesian3(0, 0.5, 0)).unit());
-					if (this->IsRotation = true) {
+					if (this->Environment->this_ui->rotationON) {
 						this->setRotationVelocity(&this->vertices[i], 
 							this->getRotationVelocity(this->vertices[i].coords - Cartesian3(0, 0.5, 0)));
 					}

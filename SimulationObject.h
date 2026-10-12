@@ -68,7 +68,6 @@ public:
 	float EnvironmentTimeStep;	// deltaT = EnvironmentTimeStep / timeStep
 	int timeStep = 20; // more large value means smaller timestep (larger than 0)
 	float energylose = 2 / 100.0;	// 20x20: 15; 10x10: 10;
-	bool IsRotation = true;
 	float rotationSpeed = 0;	// degree/s
 	float frictionCoefficient = 0;	// between 0 and 1
 	
